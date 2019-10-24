@@ -24,7 +24,7 @@ public Boolean checkHorizontal(Character xO) {
     {
         for (int i = 0; i<=2; i++)
         {
-            if ((board [0][i] == xO) && (board[1][i] == xO) && (board[0][i] == board[2][i] == xO))
+            if ((board [0][i] == xO) && (board[1][i] == xO) && (board[2][i] == xO))
             {
                 return true;
             }
@@ -39,9 +39,9 @@ public Boolean checkHorizontal(Character xO) {
                 return true;}
 
             if ((board [0][2] == xO) && (board[1][1] == xO) && (board[2][0] == xO))
+            {return true;}
 
-
-        return true;
+        return false;
     }
 
     public Boolean isInFavorOfX()
