@@ -20,6 +20,11 @@ public class PlayerTies1Test {
                 {'X', 'X', 'O'}
         });
     }
+/*
+2 x 2 Array in array speak.
+came from Board
+character arrays
+*/
 
     @Test
     public void getWinnerTest() {
@@ -32,7 +37,7 @@ public class PlayerTies1Test {
         // Then
         Assert.assertEquals(expectedWinner, actualWinner);
     }
-
+// Nobody won this game.
 
 
     @Test
@@ -46,6 +51,7 @@ public class PlayerTies1Test {
         // Then
         Assert.assertEquals(expected, actual);
     }
+    //Nobody won so it won't be in favor of x or o
 
 
     @Test
@@ -59,6 +65,7 @@ public class PlayerTies1Test {
         // Then
         Assert.assertEquals(expected, actual);
     }
+//Nobody won so it won't be in favor of x or o
 
     @Test
     public void isTieTest() {
@@ -72,5 +79,6 @@ public class PlayerTies1Test {
         Assert.assertEquals(expected, actual);
 
     }
+    //Nobody won so it won't be in favor of x or o
 }
 
